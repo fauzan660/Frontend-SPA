@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mall Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+    
+<!--  Introductory SECTION  -->
+    <section class="header">
+
+        <!--  NAVBAR  -->
+        <nav>
+            <a><img src="Images/logo.png" alt="LOGO"></a>
+            <div class="nav_links" id="navLinks">
+                <i class="ri-close-fill" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#store">STORES</a></li>
+                    <li><a href="#dining">DINING</a></li>
+                    <li><a href="#entertainment">ENTERTAINMENT</a></li>
+                    <li><a href="#reviews">REVIEWS</a></li>
+                </ul>
+            </div>
+            <i class="ri-menu-line" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="main-page-content">
+            <h1>Worlds Biggest Mall</h1>
+            <p>The Worlds Biggest and Greatest Shopping Mall Shopme has now officially opened in Florida, United States </p>
+            <a href="#", class="main-page-button">Visit Us To Know More</a>
+        </div>
+
+    </section>
+
+
+
+<!--  Courses SECTION  -->
+    <section class="course" id="store">
+
+        <h1>Exclusive Highend Brands</h1>
+        <p>Worlds Leading Luxury, Tech and Sports Companies</p>
+
+        <div class="row">
+            <div class="course-col">
+                <img src="Images/Louis_Vuitton.jpg">
+
+            </div>
+
+            <div class="course-col">
+                <img src="Images/apple.jpg">
+            </div>
+
+            <div class="course-col">
+                <img src="Images/nike.jpg">
+            </div>
+        </div>
+
+    </section>
+
+
+
+<!--  Campus SECTION  -->
+    <section class="campus" id="dining">
+
+        <h1>Food Court</h1>
+        <p>Enjoying Your Favourite Meals Has Never Been Made Easier</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="Images/kfc.png" alt="KFC">
+                <div class="layer">
+                    <h3>KFC</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="Images/starbucks.png" alt="StarBucks">
+                <div class="layer">
+                    <h3>StarBucks</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="Images/mcdonalds.png" alt="McDonalds">
+                <div class="layer">
+                    <h3>McDonalds</h3>
+                </div>
+            </div>
+            
+        </div>
+                
+
+        </div>
+    </section>
+
+
+<!---   Facilities SECTION   -->
+    <section class="facilities" id="entertainment">
+        <h1>Other Facilites</h1>
+        <p>Get a Once In a Lifetime Experience With Our Eye Catching Facilites</p>
+        
+        
+        <div class="row">
+
+            <div class="facilities-col">
+                <img src="Images/library.png" alt="Library">
+                <h3>A Cosy and Resourceful Library</h3>
+                <p>Step into an inviting library space, a snug hub filled with knowledge and comfort. Uncover a world of resources in a
+                cozy sanctuary designed for exploration and relaxation.</p>
+            </div>
+
+            <div class="facilities-col">
+                <img src="Images/basketball.png" alt="Playground">
+                <h3>Fascinating Playgrounds</h3>
+                <p>Experience captivating playgrounds filled with vibrant colors and imaginative spaces. Each area invites boundless
+                exploration and endless fascination for young adventurers</p>
+            </div>
+
+            <div class="facilities-col">
+                <img src="Images/cinema.png" alt="Cafeteria">
+                <h3>A State of the art  Cinema</h3>
+                <p>Immerse yourself in a state-of-the-art cinematic experience. Where Cutting-edge technology meets comfort, offering an
+                unforgettable journey through the world of film and entertainment.</p>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+<!---   Testemonials SECTION     -->
+    <section class="testemonials" id="reviews">
+        <h1>What Our Customers Say </h1>
+        <p>Listen To What Some Of Our Loyal Customers Have To Say</p>
+
+        <div class="row">
+            <div class="test-col">
+                <img src="Images/user1.jpg">
+                <h3>John</h3>
+                <p>An incredible shopping experience! The variety of stores and brands available at this mall is unmatched. I always find what I'm looking for. </p>
+
+            </div>
+
+            <div class="test-col">
+                <img src="Images/user.jpg">
+                <h3>James</h3>
+                <p>This mall is my go-to place for family outings. The kids' play area keeps my little ones entertained while I shop. The staff are friendly, and the facilities are always clean and well-maintained. </p>
+
+            </div>
+
+            <div class="test-col">
+                <img src="Images/user3.jpg">
+                <h3>Micheal</h3>
+                <p>I appreciate the attention to detail in the mall's design. The architecture and decor create an inviting space that's aesthetically pleasing. It's a relaxing environment to shop in </p>
+            
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+<!--  JAVASCRIPT SIDEBAR MENU  -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-100%";
+        }
+
+    </script>
+
+
+</body>
+</html>
